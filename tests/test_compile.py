@@ -111,7 +111,7 @@ class CompileKubernetesTest(unittest.TestCase):
         os.chdir(os.getcwd() + "/examples/kubernetes/")
 
     def test_compile(self):
-        sys.argv = ["kapitan", "compile", "-c", "--fetch"]
+        sys.argv = ["kapitan", "compile", "-c"]
         main()
         # Compile again to verify caching works as expected
         main()
